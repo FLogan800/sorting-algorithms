@@ -1,4 +1,4 @@
-pub fn sort<T: PartialOrd>(data: &mut [T]) {
+pub fn sort<T: PartialOrd + Copy>(data: &mut [T]) {
     for i in 0..data.len() {
         let mut min_index = i;
 
